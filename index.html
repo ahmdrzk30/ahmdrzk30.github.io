@@ -14,11 +14,11 @@
 <h2>Portofolio(s)</h2>
 <p>1. Daily Customers for December 2019</p>
 <p align="justify">Description : This is a case study from DQLab about a company that wanted to know how the sales projected for December 2019. The data was processed using Python and using Matplotlib to show the result on Visual Studio Code. The line plot was chosen, because it can show the day-to-day sales better.</p>
-<div class="section group">
-    <div class="col span_1_of_2">
+<div class="row">
+    <div class="column">
         <img src="./daily_number_customer_dec19.png" alt="Daily Customer for December 2019">
     </div>
-    <div class="col span_1_of_2">
+    <div class="column">
       <p align="justify">From the line plot, we know that the highest number of customers was on December 1st. That can be caused by many people getting prepared for Christmas. While the lowest number of customers was around Christmas, and people choose to stay at home with family and friends.<br><br>
         The possible next step that can be taken is analyzing what kind of products sold around the hightest volume of customer, so the company the bring more of the same products around the said time. Another possible step is to analyzing what kind of customers so the company can get the demography of the customers itself for statistical purpose.
       </p>
@@ -56,44 +56,10 @@
         width: 800px;
         height: auto;
     }
-    /*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF TWO  */
-.span_2_of_2 {
-	width: 100%;
-}
-.span_1_of_2 {
-	width: 49.2%;
-}
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-	.col { 
-		margin: 1% 0 1% 0%;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.span_2_of_2, .span_1_of_2 { width: 100%; }
+    @media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
 }
     </style>
 </html>
